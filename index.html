@@ -16,20 +16,19 @@
     <header>
      <div class="nav">
          <div class="left same">
-            <img src="https://beebom.com/wp-content/uploads/2015/10/Imgur-logo-e1445945125306.jpg" alt="">
-            <button>New Post</button>
+            <img src="https://beebom.com/wp-content/uploads/2015/10/Imgur-logo-e1445945125306.jpg" alt="" onclick="get()">
+          
          </div>
+         <div class="pos">
          <div class="search_div">
-            <input type="text" name="" id="search_in" placeholder="images, #tags,@users oh my">
-            <button class="search_btn"> <i class="fas fa-2x fa-search"></i> </button>
+            <input type="text" name="" id="search_in" placeholder="images, #tags,@users oh my" onkeypress="debounce(event)" >
+            <button class="search_btn" onclick="image_search( )"> <i class="fas fa-2x fa-search"></i> </button>
         </div>
-         <div class="right">
-            <img src="" alt="">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <button>Sign in</button>
-            <button>Sign up</button>
-           
-         </div>
+        <div class="pop_bounce" id="bounce_box" >
+          
+        </div>
+    </div>
+         
          
      </div>
     </header>
@@ -46,10 +45,7 @@
                   <img src="https://cdn.pixabay.com/photo/2019/01/09/14/13/leaves-3923413_960_720.jpg" alt="">
                    <div class="text_each_div">
                      <h4>Fashion</h4>
-                     <!-- backgrounds, feelings, health, people,
-                      religion, places, animals, 
-                     industry, computer, food, sports, transportation, travel, buildings, business, music -->
-                   </div>
+                       </div>
               </div>
 
                <div class="each_cat">

@@ -1,0 +1,13 @@
+body{
+    background-color: grey;
+}
+.box{
+    margin: auto;
+   width: fit-content;
+  margin-top: 10%;
+
+}
+
+.nav{
+    position: relative;
+}

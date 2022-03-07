@@ -4,12 +4,11 @@ body{
 }
 
 .nav{
-    border: 1px  solid black;
+    /* border: 1px  solid black; */
     height: 60px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
-
     background-color: transparent;
     position: fixed;
 }
@@ -20,41 +19,49 @@ body{
 }
 .same{
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     gap: 20px;
     height: inherit;
 }
-.left > img {
+.left  img {
     width: 100px;
 }
 .right{
     float: right;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: inherit;
   
 }
-
+.pos{
+    position: absolute; 
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    display: block;
+    /* border: 1px solid green; */
+    
+}
 .search_div{
     width: 400px;
     height: 30px;
     /* border: 1px solid black;    */
-    position: absolute; 
+    /* position: absolute; 
    left: 50%;
    top: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */
   border-radius: 5px;
-  padding-left: 2px;
-  padding-right: 2px;
+  /* padding-left: 2px;
+  padding-right: 2px; */
   background: rgba(255,255,255,0.5);
 }
 
 .search_btn{
     float: right;
     height: inherit;
-    border: 1px solid blue;
-    /* border: 0; */
+    /* border: 1px solid blue; */
+    border: 0;
     background-color: transparent;
     color: rgba(255,255,255,0.8);
 }
@@ -69,11 +76,28 @@ body{
     color: rgba(255,255,255,0.8) ;
 }
 
+
+.pop_bounce{
+    margin-top: 20px;
+    color: rgba(255,255,255,0.8) ;
+    border-radius: 2%;
+    background-color: rgba(0,0,0,0.5) ;
+    max-height: 400px;
+    overflow: scroll;
+    font-size: large;
+    
+    padding-left: 20px;
+}
+
+.pop_bounce > p:hover{
+    box-shadow: rgba(255,0 , 0, 0.45) 0px 5px 15px;
+}
+
 .top_div{
 
     width: 90%;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: 'Fredoka', sans-serif;
 }
 
@@ -107,7 +131,7 @@ body{
 
     width: 150px;
     border-radius: 5%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     overflow: hidden;
     margin-left: 20px;
 }
@@ -144,8 +168,6 @@ body{
     width: 100%;
     margin-top: 60px;
     row-gap: 20px;
-
-    border: 1px solid orange;
 }
 
 .each_video{
@@ -154,5 +176,10 @@ body{
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color: #c0c0c0;    
+}
+
+#data_dis >img{
+
+    width: 300px;
 }
 

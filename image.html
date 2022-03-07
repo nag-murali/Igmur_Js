@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="image.css">
+    <script src="https://kit.fontawesome.com/28e3ee16ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+     <div class="nav">
+         <div class="left same">
+            <a href="index.html"><img src="https://beebom.com/wp-content/uploads/2015/10/Imgur-logo-e1445945125306.jpg" alt="">
+            </a>  
+            
+         </div>
+         <div class="pos">
+         <div class="search_div">
+            <input type="text" name="" id="search_in" placeholder="images, #tags,@users oh my" onkeypress="debounce(event)" >
+            <button class="search_btn" onclick="image_search( )"> <i class="fas fa-2x fa-search"></i> </button>
+        </div>
+        <div class="pop_bounce" id="bounce_box" >  </div>
+
+       </div>
+        
+         
+     </div>
+    </header> 
+
+    <div id="images" class="image_div"></div>
+</body>
+</html>
+<script src="image.js"></script>
