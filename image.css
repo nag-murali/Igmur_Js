@@ -23,3 +23,6 @@ body{
 .pop_bounce > p:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.pop_bounce::-webkit-scrollbar{
+    display: none;
+}
